@@ -78,24 +78,51 @@ class Pokemon():
         self.attack_rating = attack_rating
         self.defense_rating = defense_rating
 
-    #Añadimos los getter
+    #Añadimos los getter y setter
     def get_id(self):
         return self.id
+    def set_id(self, id):
+        self.id = id
 
     def get_pokemon_name(self):
         return self.pokemon_name
+    def set_pokemon_name(self, pokemon_name):
+        self.pokemon_name = pokemon_name
     
     def get_weapon_type(self):
         return self.weapon_type
+    def set_weapon_type(self, weapon_type):
+        self.weapon_type = weapon_type
     
     def get_health_point(self):
         return self.health_point
+    def set_health_point(self, health_point):
+        self.health_point = health_point
     
     def get_attack_rating(self):
         return self.attack_rating
+    def set_attack_rating(self, attack_rating):
+        self.attack_rating = attack_rating
     
     def get_defense_rating(self):
         return self.defense_rating
+    def set_defense_rating(self, defense_rating):
+        self.defense_rating = defense_rating
+    
+    #csv.reader para leer en un archivo .csv
+    #csv.writer para escribir en un archivo .csv
+
+    #Ejemplo de como usar el modulo csv.reader
+    #import csv
+        #with open('nombre.csv', newline='') as file:   Si la carpeta no esta en el archivo hay que enrutarlo --- with open('/data/nombre.csv') as file:
+            #reader = csv.reader(file)
+            #print(row)   Para sacar todos los datos en una tabla
+
+    #Ejemplo de como usar el modulo csv.writer
+    #import csv
+        #with open('nombre.csv', newline='') as file:   Si la carpeta no esta en el archivo hay que enrutarlo --- /data/nombre.csv
+            #writer = csv.writer(file)
+            #print(row)   Para sacar todos los datos en una tabla
 
 def main():
     """Function main of the module.
